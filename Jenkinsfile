@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Jenkins pipeline -Build"'
+                sh 'ls -lta'
               }
         }
         stage('Test') {
