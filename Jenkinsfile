@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'echo "Jenkins pipeline -Build"'
                 sh 'ls -lta'
+                sh 'mvn clean install'
               }
         }
         stage('Test') {
