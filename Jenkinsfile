@@ -10,6 +10,7 @@ pipeline {
         stage('Test') {
 		steps {
 		   sh 'echo "Jenkins pipeline -Test"'
+		   sh 'hostname'
 		}
         }
         stage('Deploy') {
